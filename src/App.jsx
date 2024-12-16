@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import './App.css'
 import Live from "./components/Live"
@@ -8,8 +9,7 @@ function App() {
   return (
     <>
     <Navbar/>
-    <Live/>
-    <Highlight/>
+    <Outlet />
     </>
   )
 }
